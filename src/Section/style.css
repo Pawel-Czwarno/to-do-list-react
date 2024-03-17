@@ -14,12 +14,6 @@
     align-items: center;
 }
 
-@media (max-width: 767px) {
-    .section__header {
-        grid-template-columns: 1fr;
-    }
-}
-
 .section__title {
     margin: 0;
 }
@@ -27,4 +21,15 @@
 .section__body {
     padding: 20px;
     padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+
+    .section__body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
