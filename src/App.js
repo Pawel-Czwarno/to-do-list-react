@@ -13,9 +13,17 @@ const tasks = [
 
 function App() {
    const [hideDone, setHideDone] = useState(false);
+   const [tasks, setTasks] = useState([
+      { id: 1, content: "porąbać drewno", done: false },
+      { id: 2, content: "nawieźć trawnik", done: true },
+   ]);
 
    const toggleHideDone = () => {
       setHideDone(hideDone => !hideDone);
+   };
+
+   const removeTask = (id) => {
+      setTasks(tasks => tasks.filter(task => task.id !== id));
    };
 
    return (
@@ -42,6 +50,7 @@ function App() {
                <List
                   tasks={tasks}
                   hideDone={hideDone}
+                  removeTask={removeTask}
                />
             }
          />
