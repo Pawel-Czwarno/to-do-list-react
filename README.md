@@ -1,7 +1,6 @@
 # To do list in React.js
 
-This project is created in connection with the programming course at YouCode.pl school. It will allow to create tasks list. Tasks can be marked as done, and also can be removed from list.
-At this point project is moved to create-react-app and doesn't have interactions yet.
+This project is created in connection with the programming course at YouCode.pl school. It allows to create tasks list. Tasks can be marked as done, and also can be removed from list.
 
 ## Link
 
