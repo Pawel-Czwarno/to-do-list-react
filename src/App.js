@@ -6,11 +6,6 @@ import Header from "./Header";
 import Main from "./Main";
 import { useState } from "react";
 
-const tasks = [
-   { id: 1, content: "porąbać drewno", done: false },
-   { id: 2, content: "nawieźć trawnik", done: true },
-];
-
 function App() {
    const [hideDone, setHideDone] = useState(false);
    const [tasks, setTasks] = useState([
