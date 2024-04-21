@@ -14,7 +14,7 @@ This project is created in connection with the programming course at YouCode.pl 
 
 ## Features
 
-- HTML forms
+- HTML
 - CSS
 - CSS - Media queries
 - BEM methodology
