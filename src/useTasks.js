@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
 
-const useTasks = (storagedTask) => {
+const useTasks = () => {
+    const storagedTask = localStorage.getItem("task");
+
     const [tasks, setTasks] = useState(
         storagedTask ? JSON.parse(storagedTask) : []
     );
+
+    const [hideDone, setHideDone] = useState(false);
 
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id));
@@ -37,9 +41,15 @@ const useTasks = (storagedTask) => {
         }
     };
 
-    useEffect(() => { localStorage.setItem("task", JSON.stringify(tasks)); }, [tasks]);
+    const toggleHideDone = () => {
+        setHideDone(hideDone => !hideDone);
+    };
 
-    return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
+    useEffect(() => {
+        localStorage.setItem("task", JSON.stringify(tasks));
+    }, [tasks]);
+
+    return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask, toggleHideDone, hideDone };
 };
 
 export default useTasks;

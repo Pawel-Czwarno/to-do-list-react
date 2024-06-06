@@ -5,24 +5,18 @@ import Section from "./Section";
 import Header from "./Header";
 import Main from "./Main";
 import useTasks from "./useTasks";
-import { useState } from "react";
 
 function App() {
-   const [hideDone, setHideDone] = useState(false);
-
-   const storagedTask = localStorage.getItem("task");
-   
-   const toggleHideDone = () => {
-      setHideDone(hideDone => !hideDone);
-   };
 
    const {
       tasks,
       removeTask,
       toggleTaskDone,
       setAllDone,
-      addNewTask
-   } = useTasks(storagedTask);
+      addNewTask,
+      toggleHideDone,
+      hideDone
+   } = useTasks();
 
    return (
       <Main>
