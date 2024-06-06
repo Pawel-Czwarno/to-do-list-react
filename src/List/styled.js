@@ -16,10 +16,10 @@ export const Element = styled.li`
     word-wrap: break-word;
     word-break: break-all;
 
-@media (max-width: 767px) {
-    padding-left: 5px;
-    padding-right: 5px;
-}  
+    @media (max-width: 767px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }  
 
     ${({ hidden }) => hidden && css`
         display: none;

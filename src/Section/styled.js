@@ -15,9 +15,9 @@ export const Header = styled.header`
     justify-content: space-between;
     align-items: center;
 
-@media (max-width: 767px) {
-    grid-template-columns: 1fr;
-}
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Title = styled.h2`
@@ -28,8 +28,8 @@ export const Body = styled.div`
     padding: 20px;
     padding-top: 10px;
 
-@media (max-width: 767px) {
-    padding-left: 5px;
-    padding-right: 5px;
-}
+    @media (max-width: 767px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 `;
