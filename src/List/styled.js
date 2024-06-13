@@ -27,7 +27,7 @@ export const Element = styled.li`
 `;
 
 export const DoneElement = styled.div`
-    ${({ done }) => done && css`
+    ${({ $done }) => $done && css`
         text-decoration: line-through;
     `}
 `;
@@ -39,7 +39,7 @@ export const Button = styled.button`
     padding: 0;
     color: #ddd;
 
-    ${({ toggleDone }) => toggleDone && css`
+    ${({ $toggleDone }) => $toggleDone && css`
         background-color: green;
         transition: 1s;
 
@@ -52,7 +52,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${({ remove }) => remove && css`
+    ${({ $remove }) => $remove && css`
         background-color: red;
         transition: 1s;
 
