@@ -5,6 +5,7 @@ import Section from "./Section";
 import Header from "./Header";
 import Main from "./Main";
 import useTasks from "./useTasks";
+import GlobalStyle from "./globalStyle";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
    return (
       <Main>
+         <GlobalStyle />
          <Header
             title="Lista zadań"
          />
