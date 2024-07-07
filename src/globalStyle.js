@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
     html {
-    box-sizing: content-box;
+        box-sizing: content-box;
     }
 
     *, ::after, ::before {
@@ -14,5 +14,3 @@ const GlobalStyle = createGlobalStyle`
         background-color: #ddd;
     }
 `;
-
-export default GlobalStyle;
