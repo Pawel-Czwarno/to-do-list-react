@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: content-box;
     }
@@ -14,3 +14,5 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #ddd;
     }
 `;
+
+export default GlobalStyle;
